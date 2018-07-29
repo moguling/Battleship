@@ -29,8 +29,8 @@ let url = 'https://www.starcitygames.com/login';
   await page.setViewport({ width: 1366, height: 768});
   await page.goto(url);
   await page.waitFor('#ex_usr_email_input');
-  await page.type('#ex_usr_email_input', 'aray1@uga.edu');
-  await page.type('#ex_usr_pass_input', 'jordanray4');
+  await page.type('#ex_usr_email_input', '.............'); //LOGINS PLAINTEXT
+  await page.type('#ex_usr_pass_input', '..........');
   await page.click('#ex_usr_button_div > button');
   await page.waitFor('#main_nav > nav > ul > li:nth-child(5) > a');
   await page.click('#main_nav > nav > ul > li:nth-child(5) > a');
